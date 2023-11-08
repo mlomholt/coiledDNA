@@ -1,4 +1,5 @@
 function konv=kon(D3d,D1d,knson,knsoff,rint,lDNA,varargin)
+% varargin{1} can contain a value for kcap that the program will then use
 
 if lDNA==0
   if length(varargin)==0
