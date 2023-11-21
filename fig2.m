@@ -22,13 +22,13 @@ kon_reacts=kon_react(knson_reacts);
 kon_diffs=kon_diff(knson_diffs);
 
 figure(2)
-loglog(knsons,kons,'k-')
+loglog(knsons,kons,'k-','LineWidth',2)
 xlabel('{\it k}_{on}^{ns} ({\mu}m^2/ms)') %,'FontSize',14)
 ylabel('{\it k}_{on} ({\mu}m^3/ms)') %,'FontSize',14)
 ax=gca;
 ax.FontSize=18;
 refresh
 hold on
-  loglog(knson_reacts, kon_reacts,'r--')
-  loglog(knson_diffs, kon_diffs,'b-.')
+  loglog(knson_reacts, kon_reacts,'r--','LineWidth',2)
+  loglog(knson_diffs, kon_diffs,'b-.','LineWidth',2)
 hold off

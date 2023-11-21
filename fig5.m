@@ -26,7 +26,7 @@ for i=1:length(lDNAs)
 end
 
 figure(5)
-semilogx(sqrt(lDNAs)*lsleff,kons./koncyls,'k-')
+semilogx(sqrt(lDNAs)*lsleff,kons./koncyls,'k-','LineWidth',2)
 xlabel('{\it l}_{DNA}^{1/2}{\it l}_{sl}^{eff}') 
 ylabel('{\it k}_{on}/{\it k}_{on}^{\rm cyl}') 
 yline(0)
@@ -35,6 +35,6 @@ ax=gca;
 ax.FontSize=18;
 refresh
 hold on
-  semilogx(sqrt(lDNAs)*lsleff,kon_diff_coils/kon_diff_coil(0),'r--')
+  semilogx(sqrt(lDNAs)*lsleff,kon_diff_coils/kon_diff_coil(0),'r--','LineWidth',2)
 hold off
 

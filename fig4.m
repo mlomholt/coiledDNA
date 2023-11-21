@@ -19,7 +19,7 @@ for i=1:length(ts)
 end
 
 figure(4)
-loglog(ts,Jcaps,'k-')
+loglog(ts,Jcaps,'k-','LineWidth',2)
 xlim([ts(1) ts(end)]);
 xlabel('{\it t} (ms)')
 ylabel('{\it J}_{cap}({\it t})')
@@ -27,7 +27,7 @@ ax=gca;
 ax.FontSize=18;
 refresh
 hold on
-  loglog(ts,Regime1s,'r--')
-  loglog(ts,Regime2and3s,'b-.')
+  loglog(ts,Regime1s,'r--','LineWidth',2)
+  loglog(ts,Regime2and3s,'b-.','LineWidth',2)
 hold off
 
